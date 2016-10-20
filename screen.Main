@@ -1,2 +1,9 @@
-set langauge ::
+1- save data to shared ::
+//save data to local phone
+   var saved = Application.Context.GetSharedPreferences("myBooks", FileCreationMode.Private);
+   var savedEdit =  saved.Edit();
+   savedEdit.PutString("bookname", "me done 2018");
+    Android.Widget.Toast.MakeText(this, "item added good work", ToastLength.Long).Show();
+  1===============================================================================================
+  
 
